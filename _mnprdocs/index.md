@@ -20,6 +20,7 @@ As MNPRX continues to grow, it has become indispensable to document all its func
 <div class="doc-element" markdown="1">
 ## Basics
 ### [Installation](installation)
+### [Licensing](licensing)
 ### [Updating MNPRX](update)
 ### [MNPRX Shelf](shelf)
 </div>
