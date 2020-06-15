@@ -3,7 +3,7 @@
     {% assign page_image = page.image.header %}
     {% unless page_image %}
       {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" class="site-logo-img animated fadeInDown" alt="{{ site.title }}">
+          <img src="{{ site.logo_co | relative_url }}" class="site-logo-img animated fadeInDown" alt="{{ site.title }}">
       {% endif %}
       {% if page.url == '/' %}
         <h1 class="site-title animated fadeIn">{{ site.title }}</h1>

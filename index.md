@@ -7,35 +7,23 @@ search: true
   {% include masthead.html %}
 </div>
 
-## Empowering YOU with the technology and tools <br>to portray YOUR stylized vision in 3D
-{: #page-title .pull-center .landing-title}
-
-<div class="full-width landing-banner">
-  <a href="/software/MNPRX">
-    <div class="landing-split">
-      <div class="landing-split-section">
-        <div class="landing-split-options split-left">
-          <div class="lso-one">
-            <img src="/images/MNPRX/MNPRX.jpg" alt="MNPRX logo"/>
-            <h3>Stylized rendering for Autodesk Maya&trade;</h3>
-          </div>
-        </div>
-      </div>
-      <div class="landing-split-section-center">
-        <div class="landing-split-options">
-          <p> by </p>
-        </div>
-      </div>
-      <div class="landing-split-section">
-        <div class="landing-split-options options-logo split-right">
-          <img src="/images/logo-flat_white.svg" alt="Artineering logo"/>
-          <h5>Artineering</h5>
-        </div>
-      </div>
-    </div>
-  </a>
+<div class="landing-statement">
+  <h3> Artineering crafts software to help studios and artists create stylized 3D imagery and animation in real-time with art-directable rendering technology.</h3>
+  <h3> Let us help you achieve your unique vision.</h3>
 </div>
 
+<div class="landing-options">
+  <div class="landing-option">
+    <img src="/images/agency/4-delivery.png" alt="Software"/>
+    <h1 class="landing-img-text">Software</h1>
+    <h4 class="landing-img-text">Non-photorealistic renderer for Autodesk Maya<sup>TM</sup></h4>
+  </div>
+  <div class="landing-option">
+    <img src="/images/agency/5-next.png" alt="Agency"/>
+    <h1 class="landing-img-text">Agency</h1>
+    <h4 class="landing-img-text">Customized 3D rendering solutions on demand</h4>
+  </div>
+</div>
 
 <div class="landing-clients">
   <h2>Featured Partners</h2>
