@@ -13,16 +13,20 @@ search: true
 </div>
 
 <div class="landing-options">
-  <div class="landing-option">
-    <img src="/images/agency/4-delivery.png" alt="Software"/>
-    <h1 class="landing-img-text">Software</h1>
-    <h4 class="landing-img-text">Non-photorealistic renderer for Autodesk Maya<sup>TM</sup></h4>
-  </div>
-  <div class="landing-option">
-    <img src="/images/agency/5-next.png" alt="Agency"/>
-    <h1 class="landing-img-text">Agency</h1>
-    <h4 class="landing-img-text">Customized 3D rendering solutions on demand</h4>
-  </div>
+  <a href="/software/MNPRX">
+    <div class="landing-option">
+      <img src="/images/agency/4-delivery.png" alt="Software"/>
+      <h1 class="landing-img-text">Software</h1>
+      <h4 class="landing-img-text">Non-photorealistic renderer for Autodesk Maya<sup>TM</sup></h4>
+    </div>
+  </a>
+  <a href="/agency">
+    <div class="landing-option">
+      <img src="/images/agency/5-next.png" alt="Agency"/>
+      <h1 class="landing-img-text">Agency</h1>
+      <h4 class="landing-img-text">Customized 3D rendering solutions on demand</h4>
+    </div>
+  </a>
 </div>
 
 <div class="landing-clients">
