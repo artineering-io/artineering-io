@@ -18,12 +18,10 @@ alexandre:
   linkedin: ableron
   github: ennis
 
-nicholas:
-  name: Nicholas Wardhana
-  picture: nicholas.jpg
-  email: nicholas@artineering.io
-  web: http://nmwardhana.net/
-  role: "PhD, Senior Developer"
-  linkedin: nmwardhana
-  twitter: nmwardhana
-  github: lambrtz
+adele:
+  name: "Adèle Saint-Denis"
+  picture: adele.jpg
+  email: adele@artineering.io
+  role: "Developer"
+  linkedin: "adèle-saint-denis-85483b175"
+  github: Slowlys

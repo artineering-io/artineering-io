@@ -32,7 +32,7 @@
 function enableGA() {
   {%- if jekyll.environment == 'production' and site.google_tag_manager -%}
   if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
-    //Google Tag Manager
+    // Google Tag Manager
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -76,7 +76,7 @@ function loadTwitterTimeline() {
     script.async = true
     document.body.appendChild(script);
   }
-}
+};
 </script>
 
 <!-- cookie consent by Osano -->
@@ -87,23 +87,26 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   container: document.getElementById("content"),
   palette: {
-    popup: { background: "#000" },
-    button: { background: "#f1d600" }
+    popup: { background: "#237afc" },
+    button: { background: "#fff", "text": "#237afc" }
   },
   theme: "classic",
   type: "opt-in",
   content: {
     href: "/legal/cookie-policy",
     policy: 'Revise Cookies',
+    message: "This website uses cookies to help us understand our readers.<br>With this data, we aim to create better content and ultimately develop a better experience for you!"
   },
   onInitialise: function (status) {
+    console.log("Initializing");
     var type = this.options.type;
     var didConsent = this.hasConsented();
     if (type == 'opt-in' && didConsent) {
-      console.log("onInitialise consented");
+      console.log("Cookies consented");
       enableGA();
       loadTwitterTimeline();
     } else {
+      console.log("Anonymous browsing");
       enableGAAnon();
     }
    },
@@ -111,11 +114,11 @@ window.cookieconsent.initialise({
     var type = this.options.type;
     var didConsent = this.hasConsented();
     if (type == 'opt-in' && didConsent) {
-      console.log("onStatusChange consented");
+      console.log("Cookies consented");
       enableGA();
       loadTwitterTimeline();
     } else {
-      console.log("onStatusChange NOT consented")
+      console.log("Anonymous browsing")
       window.location.reload(true);
     }
    },
@@ -123,13 +126,17 @@ window.cookieconsent.initialise({
     var type = this.options.type;
     var didConsent = this.hasConsented();
     if (type == 'opt-in' && didConsent) {
-      console.log("onRevokeChoice consented");
+      console.log("Cookies consented");
       enableGA();
       loadTwitterTimeline();
     } else {
-      console.log("onRevokeChoice NOT consented")
+      console.log("Anonymous browsing")
       window.location.reload(true);
     }
+  },
+   onPopupOpen: function() {
+     console.log("Anonymous browsing")
+     enableGAAnon();
    }
 })});
 </script>
