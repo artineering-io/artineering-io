@@ -34,7 +34,7 @@ comercial.addEventListener("click", function (){
   nonComercial.classList.add("hide");
   more.classList.remove("hide");
   less.classList.remove("hide")
-  selection.innerText = 'Chosen license : Comercial Use'
+  selection.innerText = 'Chosen license:  Commercial Use'
   employees.classList.remove('hide')
   reset.classList.remove("hide")
 
@@ -86,7 +86,7 @@ less.addEventListener("click",function(){
   more.classList.add("hide");
   less.classList.add("hide")
   indie.classList.remove('hide')
-  employees.innerHTML = 'Your company has less than 10 '
+  employees.innerHTML = 'Your company has less than 10 employees '
   customization.classList.remove('hide')
   subs.classList.remove('hide')
   demo.classList.remove('hide')

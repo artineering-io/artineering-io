@@ -974,7 +974,6 @@ p .btn--aio {
    padding: 3px;
    font-weight: bold;
  }
-
  .demo{
   margin: 1em;
   padding: 3px;
@@ -1077,7 +1076,9 @@ p .btn--aio {
     border-bottom: 1px solid #DDD;
     padding: 25px;
     padding-top: 5em;
-    
+    .regular-text{
+      text-transform: none !important;
+    }
     svg:hover{
       cursor: pointer;
       opacity: .7;
@@ -1095,7 +1096,12 @@ p .btn--aio {
           margin-right: -100%;
       }
     }
-    
+    .pad-line{
+      border-bottom: 1px solid #DDD;
+      padding-top: 0.2em;
+      font-size: 12px;
+      font-weight: 600;
+    }
     .pricing-banner {
       display: inline-block;
       position: relative;
@@ -1194,10 +1200,13 @@ p .btn--aio {
 
 // requirements
 .aio-requirements {
-  display: inline-flex;
-  justify-content:center;
+  display:flex;
+  justify-content: space-evenly;
     .specs{
-      padding: 2.5rem;
+      
+      p{padding: 22px;}
+      img{
+      margin-top: 8px;}
     }
 }
 
