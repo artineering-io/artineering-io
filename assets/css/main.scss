@@ -1019,14 +1019,12 @@ p .btn--aio {
       }
     }
   }
-
+ 
   .pricing-plan {
     border-bottom: 1px solid #DDD;
     padding: 25px;
     padding-top: 5em;
-    .regular-text{
-      text-transform: none !important;
-    }
+    
     svg:hover{
       cursor: pointer;
       opacity: .7;
