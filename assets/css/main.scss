@@ -893,74 +893,6 @@ p .btn--aio {
     text-align: center;
   }
 }
-
-
-
-
-// .toggle, .toggler {
-//   display: inline-block;
-//   vertical-align: middle;
-//   margin: 10px;
-// }
-
-// .toggler {
-//   color: #ddd;
-//   transition: .2s;
-//   font-weight: bold;
-// }
-
-// .toggler--is-active {
-//   color: #000;
-// }
-
-// .b {
-//   display: block;
-// }
-
-// .toggle {
-//   position: relative;
-//   width: 80px;
-//   height: 35px;
-//   border-radius: 100px;
-//   background-color: #000;
-//   overflow: hidden;
-//   box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
-// }
-
-// .check {
-//   position: absolute;
-//   display: block;
-//   cursor: pointer;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   opacity: 0;
-//   z-index: 6;
-// }
-
-// .check:checked ~ .switch {
-//   right: 2px;
-//   left: 57.5%;
-//   transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-//   transition-property: left, right;
-//   transition-delay: .08s, 0s;
-// }
-
-// .switch {
-//   position: absolute;
-//   left: 2px;
-//   top: 2px;
-//   bottom: 2px;
-//   right: 57.5%;
-//   background-color: #fff;
-//   border-radius: 36px;
-//   z-index: 1;
-//   transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-//   transition-property: left, right;
-//   transition-delay: 0s, .08s;
-//   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-// }
 .hide {
   display: none !important;
 }
@@ -969,9 +901,20 @@ p .btn--aio {
 .aio-pricing {
   position: relative;
   background-color: #fff;
+
+  .choose-lic{
+   margin: 2em;
+   padding: 12px;
+   font-weight: bold;
+  }
+  .location2{
+    display: flex;
+    justify-content: left;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
  .location{
-   margin: 1em;
-   padding: 3px;
    font-weight: bold;
  }
  .demo{
@@ -980,12 +923,17 @@ p .btn--aio {
  }
  .reset{
    display: flex;
-    justify-content: end;
-    padding: 24px;
+    justify-content: space-between;
+  
     font-weight: bold;
-    cursor: pointer;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 4px;
+    .click{
+      cursor: pointer;
+    }
+    
  }
-
   .pricing{
     margin: 0 1em;
     padding: 5px;
@@ -1145,7 +1093,7 @@ p .btn--aio {
       border-bottom: none;
       border-right: 1px solid #DDD;
       flex-basis: 100%;
-      padding: 25px 50px 0;
+      // padding: 25px 50px 0;
       padding-top: 2em;
       .space-out {
         li:first-child {
@@ -1511,7 +1459,7 @@ p .btn--aio {
 .left-1 { margin-left: -1em; }
 .left-2 { margin-left: -2em; }
 .top0 { margin-top: 0; }
-.top05 { margin-top: 0.5em; }
+.top05 { margin-top: 0.5em; margin-bottom: 2px;}
 .top1 { margin-top: 1em; }
 .top2 { margin-top: 2em; }
 .top3 { margin-top: 3em; }
