@@ -878,21 +878,21 @@ p .btn--aio {
   }
 }
 
-.license-comparison {
-  display: flex;
-  align-items: center;
+// .license-comparison {
+//   display: flex;
+//   align-items: center;
 
-  .comparison-img {
-    flex: 30%;
-    padding: 0.5em;
-  }
-  .comparison-text {
-    flex: 30%;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    text-align: center;
-  }
-}
+//   .comparison-img {
+//     flex: 30%;
+//     padding: 0.5em;
+//   }
+//   .comparison-text {
+//     flex: 30%;
+//     padding-right: 0.5em;
+//     padding-left: 0.5em;
+//     text-align: center;
+//   }
+// }
 .hide {
   display: none !important;
 }
@@ -901,45 +901,40 @@ p .btn--aio {
 .aio-pricing {
   position: relative;
   background-color: #fff;
-
+hr{
+    height: 3px;
+    background-color: #ccc;
+    border: none;
+    width: 74px;
+    margin-bottom: 1.8em;
+}
   .choose-lic{
-   margin: 2em;
    padding: 12px;
    font-weight: bold;
+   font-size: 1.0em;
   }
-  .location2{
+  .breadcrumb-nav-option{
     display: flex;
     justify-content: left;
     margin-left: 24px;
     margin-bottom: 12px;
-    font-weight: bold;
+    font-weight: 400;
   }
- .location{
-   font-weight: bold;
- }
-
- #more:hover{
-   cursor: pointer;
- }
- #less:hover{
-   cursor: pointer;
- }
  .demo{
   margin: 1em;
   padding: 3px;
  }
- .reset{
-   display: flex;
+ .breadcrumb-nav{
+    display: flex;
     justify-content: space-between;
-  
-    font-weight: bold;
+    font-weight: 400;
     margin-left: 18px;
     margin-right: 18px;
     padding: 4px;
-    .click{
+    .reset-btn{
       cursor: pointer;
+      font-weight: bold;
     }
-    
  }
   .pricing{
     margin: 0 1em;
@@ -1028,16 +1023,14 @@ p .btn--aio {
   }
  
   .pricing-plan {
-    border-bottom: 1px solid #DDD;
+    border-bottom: 2px solid #DDD;
     padding: 25px;
     padding-top: 5em;
-    
-    svg:hover{
-      cursor: pointer;
-      opacity: .7;
-    }
     h2 {
       margin-top: 0;
+    }
+    h3{
+      margin-top: 0.5em;
     }
     .community-center {
       &:before {
@@ -1049,15 +1042,11 @@ p .btn--aio {
           margin-right: -100%;
       }
     }
-    .pad-line{
-      border-bottom: 1px solid #DDD;
-      padding-top: 0.2em;
-      font-size: 12px;
-      font-weight: 600;
-    }
+
     .pricing-banner {
       display: inline-block;
       position: relative;
+      
       min-width: 105px;
       @media (min-width: 900px) {
         min-width: 130px;
@@ -1077,6 +1066,7 @@ p .btn--aio {
         border-bottom-color: #008080;
       }
       p {
+        text-transform: none;
         color: #fff;
         width: 100%;
         text-align: center;
@@ -1087,19 +1077,16 @@ p .btn--aio {
   }
 
  .out  {border-right: none !important;}
- .in{
-   border-left: 1px solid #DDD !important;
- }
+ .in{border-left: 2px solid #DDD !important;}
 .pricing-table .pricing-plan:nth-child(2n){
   border-right: none;
 }
   @media (min-width: 900px) {
     .pricing-plan {
       border-bottom: none;
-      border-right: 1px solid #DDD;
+      border-right: 2px solid #DDD;
       flex-basis: 100%;
-      // padding: 25px 50px 0;
-      padding-top: 2em;
+      padding-top: 1em;
       .space-out {
         li:first-child {
           padding-top: 28px;
@@ -1112,12 +1099,12 @@ p .btn--aio {
           padding-bottom: 19px;
         }
       }
+   
       .pricing-plan:last-child {
         border-right: none;
       }
 
     }
-    
   }
   .pricing-price {
     margin-top: 0.5em;
@@ -1154,10 +1141,13 @@ p .btn--aio {
 // requirements
 .aio-requirements {
   display:flex;
-  justify-content: space-evenly;
-    .specs{
-      
-      p{padding: 22px;}
+  justify-content: center;
+  padding-right: 3%;
+    .aio-specs{
+      p{
+        font-size: 1.3em;
+        padding: 22px;
+      }
       img{
        margin-top: 8px;
        filter: opacity(0.7);
@@ -1354,8 +1344,6 @@ p .btn--aio {
   justify-content: center;
   justify-content: space-between;
   div {
-//    box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
-//    border-radius: 0.5em;
     flex: 1 0 80%;
     padding: 0.5em;
     margin: 0.5em;
@@ -1466,7 +1454,8 @@ p .btn--aio {
 .left-1 { margin-left: -1em; }
 .left-2 { margin-left: -2em; }
 .top0 { margin-top: 0; }
-.top05 { margin-top: 0.5em; margin-bottom: 2px;}
+.top05 { margin-top: 0.5em; margin-bottom: 1px;}
+// .subs{margin-bottom: 0;}
 .top1 { margin-top: 1em; }
 .top2 { margin-top: 2em; }
 .top3 { margin-top: 3em; }
