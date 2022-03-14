@@ -920,9 +920,12 @@ hr{
     margin-bottom: 12px;
     font-weight: 400;
   }
+  .subscription{
+    margin: 0.3em;    
+  }
  .demo{
   margin: 1em;
-  padding: 3px;
+  padding: 0px;
  }
  .breadcrumb-nav{
     display: flex;
@@ -1026,6 +1029,7 @@ hr{
     border-bottom: 2px solid #DDD;
     padding: 25px;
     padding-top: 5em;
+    padding-bottom:0px;
     h2 {
       margin-top: 0;
     }
@@ -1454,8 +1458,7 @@ hr{
 .left-1 { margin-left: -1em; }
 .left-2 { margin-left: -2em; }
 .top0 { margin-top: 0; }
-.top05 { margin-top: 0.5em; margin-bottom: 1px;}
-// .subs{margin-bottom: 0;}
+.top05 { margin-top: 0.5em; margin-bottom: -9px;}
 .top1 { margin-top: 1em; }
 .top2 { margin-top: 2em; }
 .top3 { margin-top: 3em; }
