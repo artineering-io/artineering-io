@@ -878,21 +878,6 @@ p .btn--aio {
   }
 }
 
-// .license-comparison {
-//   display: flex;
-//   align-items: center;
-
-//   .comparison-img {
-//     flex: 30%;
-//     padding: 0.5em;
-//   }
-//   .comparison-text {
-//     flex: 30%;
-//     padding-right: 0.5em;
-//     padding-left: 0.5em;
-//     text-align: center;
-//   }
-// }
 .hide {
   display: none !important;
 }
@@ -911,7 +896,7 @@ hr{
   .choose-lic{
    padding: 12px;
    font-weight: bold;
-   font-size: 1.0em;
+   font-size: 1.1em;
   }
   .breadcrumb-nav-option{
     display: flex;
@@ -927,6 +912,7 @@ hr{
   margin: 1em;
   padding: 0px;
  }
+ 
  .breadcrumb-nav{
     display: flex;
     justify-content: space-between;
@@ -948,8 +934,9 @@ hr{
 
     @media (min-width: 900px) {
       flex-direction: row;
-   
+      .in { border-left: none;}
     }
+  
   }
   .pricing-table {
     margin: 0 1em;
@@ -1054,6 +1041,7 @@ hr{
       min-width: 105px;
       @media (min-width: 900px) {
         min-width: 130px;
+       
       }
       margin: -4px 0;
       background-color: black;
@@ -1080,15 +1068,16 @@ hr{
     }
   }
 
- .out  {border-right: none !important;}
- .in{border-left: 2px solid #DDD !important;}
-.pricing-table .pricing-plan:nth-child(2n){
+.out{border-right: none !important;}
+
+.pricing-table .pricing-plan:nth-child(3n){
   border-right: none;
 }
+
   @media (min-width: 900px) {
     .pricing-plan {
       border-bottom: none;
-      border-right: 2px solid #DDD;
+      border-right: 1px solid #DDD;
       flex-basis: 100%;
       padding-top: 1em;
       .space-out {
@@ -1096,6 +1085,7 @@ hr{
           padding-top: 28px;
           padding-bottom: 28px;
         }
+        
       }
       .space-out-2 {
         li:first-child {
@@ -1105,9 +1095,9 @@ hr{
       }
    
       .pricing-plan:last-child {
-        border-right: none;
+       // border-right: none;
       }
-
+      
     }
   }
   .pricing-price {
@@ -1146,11 +1136,12 @@ hr{
 .aio-requirements {
   display:flex;
   justify-content: center;
-  padding-right: 3%;
     .aio-specs{
+      width: 180px;
+      align-items: center;
       p{
-        font-size: 1.3em;
-        padding: 22px;
+        font-size: 1em;
+        padding: 10px 24px ;
       }
       img{
        margin-top: 8px;
@@ -1237,6 +1228,7 @@ hr{
       li + li {
         border-left: 1px solid #AAA;
       }
+      
     }
   }
 } // end navigation
