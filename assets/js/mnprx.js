@@ -13,9 +13,12 @@ const more = document.getElementById("morethanten");
 const less = document.getElementById("lessthanten");
 
 const studio= document.getElementById("studio");
-const userselection = document.getElementById("subtitle")
+// const userselection = document.getElementById("subtitle")
 
 const indie= document.getElementById("indie");
+
+const pricingBox = document.getElementById("pricingBox")
+
 
 const selection = document.getElementById("title-breadcrumb")
 
@@ -45,23 +48,27 @@ for(var i = 0; i<selectionElements.length; i++){
 }
 
 comercial.addEventListener("click", function (){
+  pricingBox.style.transform = `translateY(${10+"px"}) `;
+  
   comercial.classList.add("hide");
   nonComercial.classList.add("hide");
   more.classList.remove("hide");
   less.classList.remove("hide")
-  selection.innerText = 'Chosen license:  Commercial Use'
+  selection.innerText = 'Commercial Use'
+ 
   question.innerText = 'How many employees does your company have?'
   reset.classList.remove("hide")
 
 })
 
 nonComercial.addEventListener("click",function(){
+  pricingBox.style.transform = `translateY(${10+"px"})`;
   console.log("click noncomercial")
   comercial.classList.add("hide");
   nonComercial.classList.add("hide");
   individual.classList.remove("hide");
   nonprofit.classList.remove("hide")
-  selection.innerText = 'Chosen license : Non-Commercial Use'
+  selection.innerText = 'Non-Commercial Use'
   subs.classList.add('hide')
   reset.classList.remove("hide")
   
@@ -74,8 +81,9 @@ nonprofit.addEventListener("click",function(){
   patron.classList.remove("hide")
   subs.classList.remove('hide')
   demo.classList.remove('hide')
-  userselection.classList.remove('hide');
-  userselection.innerText = 'You are an Non-Profit / Educational Institution'
+  // userselection.classList.remove('hide');
+  // userselection.innerText = '/ Non-profit'
+  selection.insertAdjacentHTML('beforeend', "  / Non-profit")
   question.classList.add('hide')
 })
 
@@ -86,8 +94,9 @@ individual.addEventListener("click",function(){
   community.classList.remove("hide");
   subs.classList.remove('hide')
   demo.classList.remove('hide')
-  userselection.classList.remove('hide');
-  userselection.innerText = 'You are an Individual'
+  // userselection.classList.remove('hide');
+  // userselection.innerText = ' / Individuals'
+  selection.insertAdjacentHTML('beforeend', "  / Individuals")
   question.classList.add('hide')
 })
 
@@ -97,8 +106,10 @@ more.addEventListener("click",function(){
   less.classList.add("hide")
   question.classList.add('hide')
   studio.classList.remove('hide')
-  userselection.innerHTML = 'Your company has more than 10 employees '
-  userselection.classList.remove('hide');
+  // userselection.innerHTML = '/ Companies'
+  selection.insertAdjacentHTML('beforeend', " / Companies")
+ 
+  // userselection.classList.remove('hide');
   customization.classList.remove('hide')
   subs.classList.remove('hide')
   demo.classList.remove('hide')
@@ -111,8 +122,9 @@ less.addEventListener("click",function(){
   less.classList.add("hide")
   question.classList.add('hide')
   indie.classList.remove('hide')
-  userselection.innerHTML = 'Your company has less than 10 employees '
-  userselection.classList.remove('hide');
+  // userselection.innerHTML = '/ Indie Companies'
+  selection.insertAdjacentHTML('beforeend', " / Indie Companies")
+  // userselection.classList.remove('hide');
   customization.classList.remove('hide')
   subs.classList.remove('hide')
   demo.classList.remove('hide')
@@ -122,9 +134,10 @@ less.addEventListener("click",function(){
 
 
 reset.addEventListener("click",function(){
+  pricingBox.style.transform = `translateY(${0+"px"})`;
   comercial.classList.remove("hide");
   nonComercial.classList.remove("hide");
-  userselection.classList.add('hide');
+  // userselection.classList.add('hide');
   more.classList.add('hide');
   less.classList.add('hide')
   individual.classList.add("hide");

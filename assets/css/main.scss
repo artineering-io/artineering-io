@@ -887,23 +887,28 @@ p .btn--aio {
   position: relative;
   background-color: #fff;
 hr{
-    height: 3px;
+   
     background-color: #ccc;
     border: none;
     width: 74px;
     margin-bottom: 1.8em;
 }
+
+#pricingBox{
+  transition: transform 0.2s;
+}
   .choose-lic{
    padding: 12px;
    font-weight: bold;
-   font-size: 1.1em;
+   font-size: 16px;
   }
   .breadcrumb-nav-option{
     display: flex;
     justify-content: left;
     margin-left: 24px;
     margin-bottom: 12px;
-    font-weight: 400;
+    // font-weight: 400;
+    font-weight: bold;
   }
   .subscription{
     margin: 0.3em;    
@@ -916,9 +921,9 @@ hr{
  .breadcrumb-nav{
     display: flex;
     justify-content: space-between;
-    font-weight: 400;
-    margin-left: 18px;
-    margin-right: 18px;
+    // font-weight: 400;
+    margin-left: 1px;
+    margin-right: 1px;
     padding: 4px;
     .reset-btn{
       cursor: pointer;
@@ -1013,7 +1018,7 @@ hr{
   }
  
   .pricing-plan {
-    border-bottom: 2px solid #DDD;
+    border-bottom: 1px solid #DDD;
     padding: 25px;
     padding-top: 5em;
     padding-bottom:0px;
@@ -1069,7 +1074,10 @@ hr{
   }
 
 .out{border-right: none !important;}
+.pricing-table .pricing-plan:nth-child(2n){
 
+  border-bottom: none;
+}
 .pricing-table .pricing-plan:nth-child(3n){
   border-right: none;
 }
@@ -1077,7 +1085,7 @@ hr{
   @media (min-width: 900px) {
     .pricing-plan {
       border-bottom: none;
-      border-right: 1px solid #DDD;
+      border-right: 2px solid #DDD;
       flex-basis: 100%;
       padding-top: 1em;
       .space-out {
@@ -1583,7 +1591,7 @@ hr{
       }
     }
     hr {
-      height:3px;
+      height:1px;
       border: none;
       background-color:#444;
       color:#444;
