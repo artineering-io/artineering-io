@@ -886,17 +886,19 @@ p .btn--aio {
 .aio-pricing {
   position: relative;
   background-color: #fff;
-hr{
-   
-    background-color: #ccc;
-    border: none;
-    width: 74px;
-    margin-bottom: 1.8em;
-}
+  hr{
+      background-color: #ccc;
+      border: none;
+      width: 74px;
+      margin-bottom: 1.8em;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
 
-#pricingBox{
-  transition: transform 0.2s;
-}
+  #pricingBox{
+    transition: transform 0.2s;
+  }
   .choose-lic{
    padding: 12px;
    font-weight: bold;
@@ -907,29 +909,33 @@ hr{
     justify-content: left;
     margin-left: 24px;
     margin-bottom: 12px;
-    // font-weight: 400;
     font-weight: bold;
   }
   .subscription{
     margin: 0.3em;    
   }
- .demo{
-  margin: 1em;
-  padding: 0px;
- }
- 
- .breadcrumb-nav{
-    display: flex;
-    justify-content: space-between;
-    // font-weight: 400;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 4px;
-    .reset-btn{
-      cursor: pointer;
+  .demo{
+    margin-top: 2rem;
+    padding: 0px;
+    a {
       font-weight: bold;
+      &:hover{
+        cursor:pointer;
+      }
     }
- }
+  }
+ 
+  .breadcrumb-nav{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1px;
+      margin-right: 1px;
+      padding: 4px;
+      .reset-btn{
+        cursor: pointer;
+        font-weight: bold;
+      }
+  }
   .pricing{
     margin: 0 1em;
     padding: 5px;
@@ -948,14 +954,10 @@ hr{
     padding: 5px;
     display: flex;
     flex-direction: column;
+    text-align: center;
   
     @media (min-width: 900px) {
       flex-direction: row;
-    }
-
-    * {
-      text-align: center;
-      text-transform: uppercase;
     }
 
     h2 {
@@ -985,14 +987,10 @@ hr{
     padding: 5px;
     display: flex;
     flex-direction: column;
+    text-align: center;
   
     @media (min-width: 900px) {
       flex-direction: row;
-    }
-
-    * {
-      text-align: center;
-      text-transform: uppercase;
     }
 
     h2 {
@@ -1028,6 +1026,9 @@ hr{
     h3{
       margin-top: 0.5em;
     }
+    hr{
+      height: 2px;
+    }
     .community-center {
       &:before {
           content: "";
@@ -1037,6 +1038,13 @@ hr{
           content: "";
           margin-right: -100%;
       }
+    }
+    &.pricing-options {
+      border-right: none;
+      border-bottom: none;
+    }
+    .btn {
+      text-transform: uppercase;
     }
 
     .pricing-banner {
@@ -1063,7 +1071,6 @@ hr{
         border-bottom-color: #008080;
       }
       p {
-        text-transform: none;
         color: #fff;
         width: 100%;
         text-align: center;
@@ -1072,15 +1079,6 @@ hr{
       }
     }
   }
-
-.out{border-right: none !important;}
-.pricing-table .pricing-plan:nth-child(2n){
-
-  border-bottom: none;
-}
-.pricing-table .pricing-plan:nth-child(3n){
-  border-right: none;
-}
 
   @media (min-width: 900px) {
     .pricing-plan {
@@ -1101,9 +1099,8 @@ hr{
           padding-bottom: 19px;
         }
       }
-   
       .pricing-plan:last-child {
-       // border-right: none;
+        border-right: none;
       }
       
     }
@@ -1112,20 +1109,15 @@ hr{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 1.3em;
-    span{
-      text-transform: none;
-    }
     span:first-child {
       font-weight: bold;
     }
     p {
-      text-transform: none;
       font-size: 0.6em;
       margin-top: -0.4em;
       margin-bottom: 20px;
       b {
         color: teal;
-        text-transform: none;
       }
     }
   }
@@ -1135,6 +1127,7 @@ hr{
     font-size: 12px;
     font-weight: 600;
     span {
+      text-transform: uppercase;
       margin-right:0.5em;
     }
   }

@@ -1,11 +1,11 @@
 
-const comercial = document.getElementById("comercial");
-const nonComercial = document.getElementById("noncomercial");
+const commercial = document.getElementById("commercial");
+const nonComercial = document.getElementById("noncommercial");
 const individual = document.getElementById("individual")
 const nonprofit = document.getElementById("nonprofit")
 
-const community = document.getElementById("community ")
-const patron = document.getElementById("patron")
+const community = document.getElementById("community")
+const education = document.getElementById("edu")
 
 const question =document.getElementById("question");
 
@@ -31,7 +31,7 @@ const dis = document.getElementById('disclaimer')
 const reset = document.getElementById('breadcrumbs');
 
 let selectionElements = [];
-selectionElements  =[comercial,nonComercial, individual,nonprofit, more ,less]
+selectionElements  =[commercial,nonComercial, individual,nonprofit, more ,less]
 //mouse over only for some elements
 for(var i = 0; i<selectionElements.length; i++){
   selectionElements[i].onmouseenter =(event) =>{
@@ -47,10 +47,11 @@ for(var i = 0; i<selectionElements.length; i++){
   }
 }
 
-comercial.addEventListener("click", function (){
+commercial.addEventListener("click", function (){
+  pricingBox.style.marginTop = `-10px`;
   pricingBox.style.transform = `translateY(${10+"px"}) `;
   
-  comercial.classList.add("hide");
+  commercial.classList.add("hide");
   nonComercial.classList.add("hide");
   more.classList.remove("hide");
   less.classList.remove("hide")
@@ -62,14 +63,16 @@ comercial.addEventListener("click", function (){
 })
 
 nonComercial.addEventListener("click",function(){
+  pricingBox.style.marginTop = `-10px`;
   pricingBox.style.transform = `translateY(${10+"px"})`;
-  console.log("click noncomercial")
-  comercial.classList.add("hide");
+  console.log("click noncommercial")
+  commercial.classList.add("hide");
   nonComercial.classList.add("hide");
   individual.classList.remove("hide");
   nonprofit.classList.remove("hide")
   selection.innerText = 'Non-Commercial Use'
   subs.classList.add('hide')
+  question.innerText = 'Choose what applies to you'
   reset.classList.remove("hide")
   
 })
@@ -78,7 +81,7 @@ nonprofit.addEventListener("click",function(){
   console.log("click nonprofit")
   individual.classList.add("hide");
   nonprofit.classList.add("hide");
-  patron.classList.remove("hide")
+  education.classList.remove("hide")
   subs.classList.remove('hide')
   demo.classList.remove('hide')
   // userselection.classList.remove('hide');
@@ -134,15 +137,16 @@ less.addEventListener("click",function(){
 
 
 reset.addEventListener("click",function(){
+  pricingBox.style.marginTop = `0px`;
   pricingBox.style.transform = `translateY(${0+"px"})`;
-  comercial.classList.remove("hide");
+  commercial.classList.remove("hide");
   nonComercial.classList.remove("hide");
   // userselection.classList.add('hide');
   more.classList.add('hide');
   less.classList.add('hide')
   individual.classList.add("hide");
   nonprofit.classList.add("hide")
-  patron.classList.add('hide')
+  education.classList.add('hide')
   community.classList.add('hide')
   studio.classList.add('hide')
   indie.classList.add('hide')
