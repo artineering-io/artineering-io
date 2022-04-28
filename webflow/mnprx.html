@@ -1,0 +1,34 @@
+<!-- HEAD-->
+<link rel="stylesheet" href="https://artineering.io/assets/css/plugins/twentytwenty.css" type="text/css" media="screen"/>
+
+<!-- EMBED -->
+<figure class="mnprx-hero">
+    <div id="mnprx-comparison" class="twentytwenty-container">
+        <!-- The before image is first -->
+        <img src="https://artineering.io/images/headers/MNPRX1.jpg" style="width: 100vw"/>
+        <!-- The after image is last -->
+        <img src="https://artineering.io/images/headers/MNPRX2.jpg" style="width: 100vw"/>
+    </div>
+</figure>
+
+<style>
+    body { margin: 0 }
+    .mnprx-hero { margin: 0; cursor: none;}
+    .twentytwenty-handle { cursor: none; }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<script>
+    $(function(){
+        $("#mnprx-comparison").twentytwenty({
+        move_slider_on_hover: true, // Move slider on mouse hover
+        no_overlay: true, // Do not show the overlay with before and after
+        });
+    });
+</script>
+
+<!-- FOOTER -->
+<script src="https://artineering.io/assets/js/plugins/jquery.twentytwenty.js" type="text/javascript"></script>
+<script src="https://artineering.io/assets/js/plugins/jquery.event.move.js" type="text/javascript"></script>
+

@@ -1,0 +1,127 @@
+<p class="demo" id="demo">Still unsure? <strong><a data-fsc-item-path="mnprx-non-commercial" data-fsc-item-path-value="mnprx-non-commercial" data-fsc-action="Update, Checkout">Try the Demo version</a></strong><sup><a href="#smallprint">5</a></sup></p>
+
+<script>
+    const pricingBox = document.getElementById("pricing-box");
+    const pricingNav = document.getElementById("pricing-nav");
+    const bcCommercial = document.getElementById("bc-commercial");
+    const bcStudio = document.getElementById("bc-studio");
+    const bcIndie = document.getElementById("bc-indie");
+    const bcNonCommercial = document.getElementById("bc-noncommercial");
+    const bcIndividuals = document.getElementById("bc-individuals");
+    const bcNonProfits = document.getElementById("bc-nonprofits");
+    const bcReset = document.getElementById("bc-reset");
+
+    const pricingRoot = document.getElementById("pricing-root");
+    const pricingQuestion = document.getElementById("pricing-question");
+
+    const commercialOp = document.getElementById("op-commercial");
+    const pricingCommercial = document.getElementById("pricing-commercial");
+    const studioOp = document.getElementById("op-studio");
+    const pricingStudio = document.getElementById("pricing-studio");
+    const indieOp = document.getElementById("op-indie");
+    const pricingIndie = document.getElementById("pricing-indie");
+
+    const nonComercialOp = document.getElementById("op-noncommercial");
+    const pricingNoncommercial = document.getElementById("pricing-noncommercial");
+    const individualOp = document.getElementById("op-individual");
+    const pricingIndividual = document.getElementById("pricing-individual");
+    const nonprofitOp = document.getElementById("op-nonprofit");
+    const pricingNonprofit = document.getElementById("pricing-nonprofit");
+
+    function resetPricing(){
+        pricingNav.style.display = 'none';
+        bcCommercial.style.display = 'none';
+        bcStudio.style.display = 'none';
+        bcIndie.style.display = 'none';
+        bcNonCommercial.style.display = 'none';
+        bcIndividuals.style.display = 'none';
+        bcNonProfits.style.display = 'none';
+
+        pricingQuestion.style.display = 'block';
+        pricingQuestion.innerText = 'Choose your License'
+        pricingRoot.style.display = 'flex';
+        pricingCommercial.style.display = 'none';
+        pricingStudio.style.display = 'none';
+        pricingIndie.style.display = 'none';
+        pricingNoncommercial.style.display = 'none';
+        pricingIndividual.style.display = 'none';
+        pricingNonprofit.style.display = 'none';
+    }
+    
+    bcReset.addEventListener("click", function (){
+        pricingBox.style.marginTop = `0px`;
+        pricingBox.style.transform = `translateY(${0+"px"}) `;
+        resetPricing();
+    })
+
+    function showCommercialOps(){
+        pricingNav.style.display = 'flex';
+        pricingQuestion.innerText = 'How many employees does your company have?'
+        pricingRoot.style.display = 'none';
+        pricingCommercial.style.display = 'flex';
+        bcCommercial.style.display = 'block';
+    }
+
+    commercialOp.addEventListener("click", function (){
+        pricingBox.style.marginTop = `-5px`;
+        pricingBox.style.transform = `translateY(${5+"px"}) `;
+        showCommercialOps();
+    })
+
+    studioOp.addEventListener("click", function (){
+        pricingQuestion.style.display = 'none';
+        pricingCommercial.style.display = 'none';
+        pricingStudio.style.display = 'flex';
+        bcStudio.style.display = 'block';
+    })
+
+    indieOp.addEventListener("click", function (){
+        pricingQuestion.style.display = 'none';
+        pricingCommercial.style.display = 'none';
+        pricingIndie.style.display = 'flex';
+        bcIndie.style.display = 'block';
+    })
+
+    function showNonCommercialOps(){
+        pricingNav.style.display = 'flex';
+        pricingQuestion.innerHTML = 'Choose what applies to you<sup><a href="#smallprint">1</a></sup>';
+        pricingRoot.style.display = 'none';
+        pricingNoncommercial.style.display = 'flex';
+        bcNonCommercial.style.display = 'block';
+    }
+
+    nonComercialOp.addEventListener("click", function (){
+        pricingBox.style.marginTop = `-5px`;
+        pricingBox.style.transform = `translateY(${5+"px"}) `;
+        showNonCommercialOps();
+    })
+
+    individualOp.addEventListener("click", function (){
+        pricingQuestion.style.display = 'none';
+        pricingNoncommercial.style.display = 'none';
+        pricingIndividual.style.display = 'flex';
+        bcIndividuals.style.display = 'block';
+    })
+
+    nonprofitOp.addEventListener("click", function (){
+        pricingQuestion.style.display = 'none';
+        pricingNoncommercial.style.display = 'none';
+        pricingNonprofit.style.display = 'flex';
+        bcNonProfits.style.display = 'block';
+    })
+
+    bcCommercial.addEventListener("click", function(){
+        resetPricing();
+        showCommercialOps();
+    })
+
+    bcNonCommercial.addEventListener("click", function(){
+        resetPricing();
+        showNonCommercialOps();
+    })
+</script>
+
+<!-- FastSpring -->
+<script id="fsc-api" src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
+    type="text/javascript" data-storefront="artineering.onfastspring.com/popup-artineering">
+</script>
