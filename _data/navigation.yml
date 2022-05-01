@@ -1,19 +1,13 @@
 # Site navigation links
 
 - title: Software
-  url: /software/MNPRX
+  url: https://artineering.io/software/MNPRX
 
 - title: Support
-  url: /support/
+  url: https://artineering.io/support/
 
 - title: Agency
-  url: /agency/
+  url: https://artineering.io/agency/
 
 - title: About Us
-  url: /about/
-
-- title: Blog
-  url: /blog/
-
-- title: <i class="fas fa-search fa-lg"></i>
-  url: /search/
+  url: https://artineering.io/about/

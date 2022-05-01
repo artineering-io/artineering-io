@@ -16,7 +16,7 @@ redirect_from:
 ---
 
 <figure class="pull-center">
-	<a href="/software/MNPRX/#getit"><img src="/images/buttons/mnprx_getIt.jpg" alt="image"></a>
+	<a href="https://artineering.io/software/MNPRX/#download"><img src="/images/buttons/mnprx_getIt.jpg" alt="image"></a>
   <a href="./docs"><img src="/images/buttons/mnprx_documentation.jpg" alt="image"></a>
   <figcaption>As an MNPRX user, you will automatically get the latest version of MNPRX upon release!</figcaption>
 </figure>
