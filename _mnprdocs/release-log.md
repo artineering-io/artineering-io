@@ -23,6 +23,45 @@ redirect_from:
 
 
 ---
+## October 2021 UPDATE
+The October 2021 update brings important production improvements for the frayed style with new functionality including feathering and on-demand fraying. Saving and loading has also been improved to generate smaller file sizes and take less time. Other updates have also been done to increase the general robustness of MNPRX and prepare for future migration to Flair.
+
+<figure class="pull-center">
+	<video autoplay loop muted playsinline>
+	  <source src="/images/MNPRX/2021-10.mp4" type="video/mp4">
+	</video>
+  <figcaption>Taiko Studios used this version to create their short <a href="https://youtu.be/UTidwW3iLHk">Bidoof’s Big Stand</a></figcaption>
+</figure>
+
+### Frayed
+
+- *New* - Adding support for fray edges on demand
+- *New* - Feathering control now available for smoother frayed edges.
+- *New* - Adding functionality to not create frayed instances for certain shapes (”Frayed Settings” in the MNPRX Toolbox)
+- *Improved* - Parented meshes now properly supported for frayed stylization
+- *Fixed -* Deformed attribute being applied to all meshes when instances were enabled
+- *Fixed* - Assigning of materials to referenced materials with instances
+
+### Saving and Loading
+
+- *Improved* - Saving baked positions in style file to reduce file size and improve saving speed.
+- *Improved* - Avoiding saving previous positions to reduce file size and improve saving speed.
+- *Improved* - Avoiding loading materials again on auto-import when not necessary.
+- *Improved* - Loading of external style files now load if scene with MNPRX stylization is opened and plugin was previously not loaded
+
+### Miscellaneous
+
+- *New* - Adding support for trax sounds when playblasting
+- *Fixed* - Playblasting not working when audio was on timeline
+- *Fixed* - Progress dialog bar not advancing under certain conditions.
+- *Fixed* - Progress dialog not parenting to main window.
+- *Fixed* - Issue of connection not succeeding as node was being evaluated
+- *Improved -* The last selected object’s material will show in *bulk_attr* tool
+- *Improved* - Batch render output now clearer
+- *Improved* - Standalone renderer automatically setting the DX11 environment variable
+
+
+---
 ## May 2021 UPDATE
 The May 2021 update brings small but important hotfixes if the following applies to you:
 
