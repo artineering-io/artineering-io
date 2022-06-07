@@ -662,7 +662,7 @@ _New_ - The _Cutout Stylization_ brings real-time cutout rendering of 3D objects
 * _New_ - Cutout stylization [**documentation**](/styles/cutout/).
 * _New_ - Tutorial series on [Stylizing a Scene](./docs/stylizing-scene/) in progress, featuring the stylization of a production shot from _Run Totti Run_ by _Shad Bradbury_.
 * _New_ - Tutorial for [Rendering a Scene](./docs/rendering-scene/).
-* _New_ - Thorough documentation on [Art-direction](./docs/art-direction/), including breakdowns on the [_NoiseFX_](/docs/noisefx/) and [_PaintFX_](docs/paintfx/) tools.
+* _New_ - Thorough documentation on [Art-direction](./docs/art-direction/), including breakdowns on the [_NoiseFX_](./docs/noisefx/) and [_PaintFX_](./docs/paintfx/) tools.
 * _New_ - Thorough documentation on the [MNPRX Toolbox](./docs/toolbox/).
 * _Updated_ - All existing documentation to match the July 2019 release i.e., [MNPRX Shelf](./docs/shelf/) and [Configuration node](./docs/config/).
 
@@ -744,7 +744,7 @@ _New_ - Viewport rendering has been completely re-implemented to be handled enti
 
 **Documentation**
 * _New_ - Thorough documentation on Basics: [Installation](/software/MNPRX/docs/installation), [Updating MNPRX](/software/MNPRX/docs/update), [MNPRX Shelf](/software/MNPRX/docs/shelf).
-* _New_ - Thorough documentation on Styles: [Presets](/software/MNPRX/docs/style-presets), [Configuration](/software/MNPRX/docs/conf), [Import/Export](/software/MNPRX/docs/import-export).
+* _New_ - Thorough documentation on Styles: [Presets](/software/MNPRX/docs/style-presets), [Configuration](/software/MNPRX/docs/config), [Import/Export](/software/MNPRX/docs/import-export).
 * _New_ - Thorough documentation on Materials: [Presets](/software/MNPRX/docs/material-presets), [Uber Material](/software/MNPRX/docs/uber), [Proxies](/software/MNPRX/docs/proxy).
 
 ---
@@ -812,7 +812,7 @@ The tool is name-based, but supports the Import/Export between different namespa
 
 **MNPR Material**
 * _New_ - Art-directable shading has been added to the _mnpr_uber_ material. Artists can now control light directly on the object through _lightmaps_, _paintFX_ or _noiseFX_.
-Lightmaps within the material can be activated on demand in the _Settings_ of the material itself. Art-directable shading is found by default within the _paintFX_ and _noiseFX_ tools. Art-directed shading is strongly dependent on the _Diffuse Factor_ attribute. Therefore, an additional _Shade_ attribute has been added to the material to separately control the lighting contribution from lights. It is highly encouraged to read the [documentation](./docs/lighting#lightmaps) to fully understand how art-directable shading can be effectively used.
+Lightmaps within the material can be activated on demand in the _Settings_ of the material itself. Art-directable shading is found by default within the _paintFX_ and _noiseFX_ tools. Art-directed shading is strongly dependent on the _Diffuse Factor_ attribute. Therefore, an additional _Shade_ attribute has been added to the material to separately control the lighting contribution from lights. It is highly encouraged to read the [documentation](./docs/uber#lightmap) to fully understand how art-directable shading can be effectively used.
 * _Fixed_ - Issue with depth in semi-transparent objects not rendering and certain depth-dependent stylization effects now working properly.
 
 **PaintFX**
