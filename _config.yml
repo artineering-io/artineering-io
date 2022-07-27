@@ -82,12 +82,6 @@ collections:
   mnprdocs:
     output: true
     permalink: /software/MNPRX/docs/:slug/
-  flairdocs:
-    output: true
-    permalink: /software/flair/docs/:slug/
-  publications:
-    output: true
-    permalink: /:collection/:title/
   software:
     output: true
     permalink: /:collection/:title/
@@ -97,34 +91,10 @@ collections:
   seminars:
     output: true
     permalink: /:collection/:title/
-  blog:
-    output: true
-    permalink: /:collection/:title/
-  projects:
-    output: true
-    permalink: /:collection/:title/
-  feeds:
-    output: true
-    permalink: /software/feeds/:title/
 
 
 # Front Matter Defaults
 defaults:
-  # posts defaults
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      share: true
-  # projects defaults
-  - scope:
-      path: "_projects"
-      type: projects
-    values:
-      layout: page
-      comments: true
-      share: true
   # default social card
   - scope:
       path: ""
