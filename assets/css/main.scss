@@ -1660,19 +1660,6 @@ p .btn--aio {
 }
 
 
-/*
-   Osano cookie consent
-  ========================================================================== */
-// don't show popup on mobile after accepted or revoked
-.cc-revoke {
-  background-color: #000 !important;
-  font-size: 0.75em;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-
-
 /* Text wrapping around highlights */
 
 .page-highlights {
