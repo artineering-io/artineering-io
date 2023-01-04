@@ -2,10 +2,10 @@
 title: "Artineering"
 locale: en-US
 description: "Rendering, in  style!"
-copyright: © 2021 Artineering OÜ
+copyright: © 2023 Artineering OÜ
 #remote_theme: mmistakes/so-simple-theme
 baseurl: # the subpath of your site, e.g. "/blog"
-url: https://artineering.io
+url: https://repo.artineering.io
 logo: /images/logo.png
 logo-flat: /images/logo-flat.svg
 date_format: "%B %-d, %Y"
@@ -24,10 +24,6 @@ disqus:
   shortname: artineering
 twitter:
   username: notpainted
-
-# top banner
-# banner-text: "40% off first payment of MNPRX Indie with code: CYBER-WEEK-2020"
-# banner-link: "/software/MNPRX/#getit"
 
 # Liquid
 liquid:
