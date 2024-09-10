@@ -13,7 +13,7 @@ redirect_from:
 ## MNPRX licensing basics
 
 Purchasing MNPRX grants you a license that allows you to use the full functionality of MNPRX. This license takes the form of an activation code that is sent to you (typically by email) alongside your copy of MNPRX.
-If you did not receive an activation code, please [contact us](/contact/).
+If you did not receive an activation code, please [contact us](https://artineering.io/contact).
 
 A single MNPRX license can be active on only one computer at a time.
 **An internet connection is required for running the licensed version of MNPRX**. Running the Demo version does not require any internet connection.
@@ -70,7 +70,7 @@ In case the activation code is not valid, or the existing license is no longer v
 ## FAQ
 {% include faq/section.html file="activation.md" self-contained=true %}
 
-If the issues persists, please [contact us](/contact/) so that we can get you onboard as soon as possible.
+If the issues persists, please [contact us](https://artineering.io/contact) so that we can get you onboard as soon as possible.
 {: .notice--info}
 
 {% include toc-side %}

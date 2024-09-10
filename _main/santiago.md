@@ -40,11 +40,6 @@ Ex _[Lucasfilm](http://lucasfilm.com/)_ jedi, _[EF](https://www.joinef.com/)_ en
 	{% if author.github %}<a href="https://github.com/{{ author.github }}" title="{{ author.name}} on Github" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>{% endif %}
 </div>
 
-<!--data-tweet-limit="3"-->
-<div class="responsive-twitter">
-<a class="twitter-timeline" height="100vh" href="https://twitter.com/{{author.twitter}}" data-widget-id="722401536261763072">Allow cookies to display News</a>
-</div>
-
 ## Blog
 
 Most of my undergoing in life is documented here to keep my interested readers (mostly family and close friends) updated. This section is a continuation from my previous  [blog](http://santiagomontesdeoca.blogspot.com), for a new stage of my life.

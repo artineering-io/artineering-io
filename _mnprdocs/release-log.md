@@ -137,7 +137,7 @@ Toon shading works on top of existing shading attributes, so one can do a mix of
 - *New* - You can render with **MNPRX without opening the Maya UI using *mayapy***!  
 An example on how to setup the Python script can be found in `MNPRX/scripts/flair_standalone.py`.
 
-This is a *Windows only* feature for now, *[get in touch with us](/contact)* if you need us to develop standalone MNPRX versions for other OSs.
+This is a *Windows only* feature for now, *[get in touch with us](https://artineering.io/contact)* if you need us to develop standalone MNPRX versions for other OSs.
 {: .notice--info}
 
 ### Support for Maya 2022

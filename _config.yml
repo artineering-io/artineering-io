@@ -74,15 +74,6 @@ collections:
   mnprdocs:
     output: true
     permalink: /software/MNPRX/docs/:slug/
-  software:
-    output: true
-    permalink: /:collection/:title/
-  styles:
-    output: true
-    permalink: /:collection/:title/
-  seminars:
-    output: true
-    permalink: /:collection/:title/
 
 
 # Front Matter Defaults

@@ -86,5 +86,5 @@ As MNPRX continues to grow, it has become indispensable to document all its func
 
 </div>
 
-We would be happy to include further documentation in this website, so do not hesitate to [contact us](/contact/) if you wish to have further clarification on certain features.
+We would be happy to include further documentation in this website, so do not hesitate to [contact us](https://artineering.io/contact) if you wish to have further clarification on certain features.
 {: .top2}
